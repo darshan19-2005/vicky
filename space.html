@@ -1,4 +1,4 @@
-i<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,3 +28,74 @@ UPGRADED VERSION
 </body>
 </html>
 WITH BACKGROUND COLOUR
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Welcome Page</title>
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: darkblue;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 15px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Web Page!</h1>
+    <p>Enter your name below and click the button to get a personalized greeting:</p>
+
+    <input type="text" id="nameInput" placeholder="Enter your name here">
+    <br>
+    <button onclick="greetUser()">Click Me</button>
+
+    <script>
+        function greetUser() {
+            var name = document.getElementById('nameInput').value.trim();
+            if (name === "") {
+                alert("Please enter your name to receive a greeting.");
+            } else {
+                alert("Welcome, " + name + "!");
+            }
+        }
+    </script>
+</body>
+</html>
+
